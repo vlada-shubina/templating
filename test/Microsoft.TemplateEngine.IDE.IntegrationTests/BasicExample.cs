@@ -84,7 +84,6 @@ namespace Microsoft.TemplateEngine.IDE.IntegrationTests
             //name - template source name
             //outputPath - output path for template execution
             //parameters - collection of input parameters to template
-            //skiUpdateCheck - allow overwrite existing files (force creation)
             //baseline - baseline to use (if implemented in template) (optional)
             var executionResult = await bootstrapper.CreateAsync(template, "test", "test", new Dictionary<string, string>(), false, "").ConfigureAwait(false);
             var executionConsoleResult = await bootstrapper.CreateAsync(template, "consoleTest", "consoleTest", new Dictionary<string, string>(), false, "").ConfigureAwait(false);
